@@ -14,8 +14,6 @@ import com.squareup.picasso.Picasso
 class contactRvAdaptor(var contactList:List<Contacts>):
    RecyclerView.Adapter<ContactViewHolder> () {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
-//        var itemView=LayoutInflater.from(parent.context)
-//            .inflate(R.layout.contact_list_tem,parent,false)
         var binding=ContactListTemBinding
             .inflate(LayoutInflater.from(parent.context),parent,false)
         return  ContactViewHolder(binding)

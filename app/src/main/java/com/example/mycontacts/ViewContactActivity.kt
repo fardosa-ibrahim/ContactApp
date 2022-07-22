@@ -13,7 +13,7 @@ class ViewContactActivity : AppCompatActivity() {
     fun getExtras(){
         var name=intent.extras?.getString("NAME")
         var address=intent.extras?.getString("ADDRESS")
-        Toast.makeText(this,name,Toast.LENGTH_LONG).show()
-        Toast.makeText(this,address,Toast.LENGTH_LONG).show()
+//        Toast.makeText(this,name,Toast.LENGTH_LONG).show()
+//        Toast.makeText(this,address,Toast.LENGTH_LONG).show()
     }
 }

@@ -42,6 +42,7 @@ class contactRvAdaptor(var contactList:List<Contacts>):
             intent.putExtra("ADDRESS",currentContact.address)
             intent.putExtra("PHONENUMBER",currentContact.phoneNumber)
             intent.putExtra("IMAGE",currentContact.image)
+            intent.putExtra("EMAIL",currentContact.email)
             context.startActivity(intent)
         }
     }

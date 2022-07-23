@@ -20,11 +20,13 @@ class ViewContactActivity : AppCompatActivity() {
     }
     fun getExtras(){
         var name=intent.extras?.getString("NAME")
+        var email=intent.extras?.getString("EMAIL")
         var phoneNumber=intent.extras?.getString("PHONENUMBER")
         var image=binding.imgContact2
 
         binding.tvName.text=name
         binding.tvPhone.text=phoneNumber
+        binding.tvEmail.text=email
         Picasso.get().load(intent.getStringExtra("IMAGE"))
             .into(image)
 
